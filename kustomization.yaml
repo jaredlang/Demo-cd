@@ -1,0 +1,15 @@
+resources:
+- deployment.yaml
+- service.yaml
+
+commonLabels:
+  app: demoapp
+
+commonAnnotations:
+  app: demoapp-annontations
+
+namePrefix:
+  kustom-
+
+nameSuffix:
+  -v1

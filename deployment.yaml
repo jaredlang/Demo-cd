@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DemoApp
+spec:
+  replicas: 1
+  template:
+    spec: # Pod spec
+      containers:
+      - name: helloworld
+        image: "jaredlangxpx/helloworld:1.0.0"
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: mykustom-map
+        resources:
+          requests:
+            memory: "16Mi" 
+            cpu: "50m"    # 500milliCPUs (1/2 CPU)
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
