@@ -4,14 +4,3 @@ metadata:
   name: demoapp
 spec:
   replicas: 2
-  template:
-    spec: # Pod spec
-      containers:
-      - name: helloworld
-        resources:
-          requests:
-            memory: "24Mi" 
-            cpu: "70m"    # 500milliCPUs (1/2 CPU)
-          limits:
-            memory: "128Mi"
-            cpu: "100m"

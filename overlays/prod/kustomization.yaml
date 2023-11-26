@@ -3,6 +3,7 @@ bases:
 
 patches:
  - path: replicas.yaml
+ - path: cpu_resources.yaml
 
 configMapGenerator:
 - name: demoapp-map
