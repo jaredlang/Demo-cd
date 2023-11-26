@@ -7,4 +7,4 @@ spec:
     spec: # Pod spec
       containers:
       - name: helloworld
-        image: "jaredlangxpx/helloworld:1.2.0"
+        image: "jaredlangxpx/helloworld:2.1.0"
