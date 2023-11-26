@@ -1,0 +1,9 @@
+bases:
+- ../../base
+
+patches:
+ - path: replicas.yaml
+
+configMapGenerator:
+- name: demoapp-map
+  env: config.properties
