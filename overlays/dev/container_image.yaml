@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoapp
+spec:
+  template:
+    spec: # Pod spec
+      containers:
+      - name: helloworld
+        image: "jaredlangxpx/helloworld:1.0.0"

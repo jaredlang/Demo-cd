@@ -3,6 +3,7 @@ bases:
 
 patches:
  - path: replicas.yaml
+ - path: container_image.yaml
 
 configMapGenerator:
 - name: demoapp-map
