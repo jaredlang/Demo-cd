@@ -7,3 +7,6 @@ patches:
 configMapGenerator:
 - name: demoapp-map
   env: config.properties
+
+nameSuffix:
+  -prod
